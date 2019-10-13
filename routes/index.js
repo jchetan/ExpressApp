@@ -5,5 +5,5 @@ let index = require('../controllers/index');
 
 /* GET home page. */
 router.get('/', index.index);
-
+router.post('/', index.submit_form);
 module.exports = router;
