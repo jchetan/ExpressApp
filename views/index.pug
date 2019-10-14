@@ -1,9 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  form(action="/", method="POST")
-    input(name="name", type="text", placeholder="Enter your name here")
-    input(name="spouseName", type="text", placeholder="Enter your spouse name here")
-    button(type="submit") Submit
+	h1= title
+	p Welcome to #{title}
+	form(action="/", method="POST")
+		input(name="name", type="text", placeholder="Enter your name here")
+		input(name="spouseName", type="text", placeholder="Enter your spouse name here")
+		input(name="email", type="email", placeholder="Enter your email here")
+		button(type="submit") Submit
